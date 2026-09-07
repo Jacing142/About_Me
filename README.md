@@ -35,81 +35,6 @@ AI Solutions Engineer. I find the business problems where AI is worth using, the
 
 ---
 
-# Projects
-
-## Bastidian
-
-B2B SaaS for compliance comprehension assessment. Solo build, current.
-
-https://bastidian.vercel.app
-
-**Problem.** Completion logs and multiple-choice pass rates prove that someone clicked, not that they understood. Regulators increasingly require evidence of comprehension, and a completion log is not a defence once an employee actually offends.
-
-**Solution.** A layer sitting on top of an employer's existing training, replacing the post-training multiple-choice test with a conversational assessment. It outputs an executive report plus an audit-ready evidence appendix.
-
-*Conversation design.* A four-stage flow built on Bloom's taxonomy: core question, explanation, application, protégé effect.
-
-*Authoring.* Questions are handwritten by the admin or uploaded from SCORM or Excel, AI-enriched with a human in the loop, then converted into a rubric with a human in the loop. Once approved, the assessment locks and is reusable across unlimited users and runs.
-
-*Scoring.* LLM-as-judge producing binary 1/0 scores against pre-built rubrics rather than holistic scales, so every criterion is measurable. Responses below a confidence threshold route to human review. Three-pass multi-evaluator consensus with a tiebreaker, QA review before delivery, and optional named human review.
-
-*Architecture.* One high-quality Opus call builds the rubrics once, then cheap GPT-4o-mini calls score each response 0/1 against them. Deployed via a Railway worker plus Supabase, using async job processing to work around Vercel timeouts.
-
-*Stack.* Python, LangChain, LangGraph, LLM APIs, Supabase/Postgres, TypeScript with Zod, OAuth.
-
-**My role.** Everything, solo: architecture, build, landing page, sample reports, positioning, outreach.
-
-**Numbers.** Roughly 90% evaluation cost reduction, with output quality improved rather than merely maintained. Approximately $1–2 to build a question, $0.01–0.02 to run it. Five repeat runs against the same tested answers produced consistent results. Sample executive report 24 pages; sample evidence appendix 39 pages.
-
-**Status.** Architecture complete. The landing page is live, with a sample executive report, sample evidence appendix and admin dashboard demo publicly reachable. The MVP is gated behind a contact request because each run carries a cost.
-
-Go-to-market is a target list of 80–100 FCA and FINRA-regulated firms, with discovery calls held with compliance leaders and several client meetings. No revenue, pilots or customers to date.
-
-The beachhead is anti-money-laundering under FCA and FINRA, with a potential move to UK workplace harassment tied to the Employment Rights Act 2025 duty change on 30 October 2026.
-
-**Debugging case: the empty-section pass.** The LLM judge, working from a detailed rubric, was passing responses that missed key details. I found this pre-production using test cases each deliberately wrong in exactly one area.
-
-The root cause was that one criterion's data never reached the database, so the judge read an empty section and skipped it rather than failing it. The fix was twofold: correct the database write, and change the rubric to flag empty sections instead of skipping them.
-
----
-
-## Validity
-
-End-to-end agentic claim-verification system. Open source.
-
-https://github.com/Jacing142/Validity
-
-Decomposes input into atomic claims, searches for supporting and contradicting evidence, classifies source credibility, and produces a structured verdict.
-
-LangGraph orchestration, WebSocket streaming, human-in-the-loop review modal, MCP server integration. FastAPI backend, React frontend, deployed via Docker.
-
----
-
-## GenAI Conversation Explorer
-
-Browser-based tool for searching, filtering and merging exported AI conversation logs. Open source.
-
-- Live: https://gen-ai-conversation-searcher-merger.vercel.app
-- Source: https://github.com/Jacing142/GenAI-Conversation-Searcher-Merger
-
-Parses, cleans and merges exported data from ChatGPT and Claude, solving broken native search, automated titles and fragmented multi-account exports. Handles file sizes too large for direct re-upload, so users can filter and send curated datasets back into a model for analysis. It removes roughly 70% of irrelevant content.
-
-Pre-LLM PII filtering and local execution mean data never leaves the machine. Built in JavaScript, deployed on Vercel.
-
-100+ signups in the first week, with sustained 100+ weekly active users.
-
----
-
-## Voice AI virtual agent — POC solution design
-
-An 11-intent NLU voice agent for a fictional restaurant chain contact centre, built in Vonage AI Studio as a Solutions Engineering take-home and delivered in 48 hours.
-
-Includes a three-tier containment framework, a $3.4M year-one ROI model, NLU training data and a full executive deck. Designed for a 150-agent call centre.
-
-The repository is open source and the presentation is my own work; both are publishable.
-
----
-
 # Work
 
 ## Independent practice (2025–present)
@@ -374,6 +299,81 @@ Tourism company, Jerusalem. The role was sales.
 **AEI — Research Intern, geopolitics (2022–2023).** Research focused on educational terrorism, tracing grant money through funding chains. Presented findings to senior researchers and an ambassador.
 
 **Advanced Reality Lab, Reichman University — Research Assistant (2021–2022).** Set up VR hardware and Unity environments for behavioural anxiety research. Onboarded participants and kept technical systems running through experimental protocols.
+
+---
+
+# Projects
+
+## Bastidian
+
+B2B SaaS for compliance comprehension assessment. Solo build, current.
+
+https://bastidian.vercel.app
+
+**Problem.** Completion logs and multiple-choice pass rates prove that someone clicked, not that they understood. Regulators increasingly require evidence of comprehension, and a completion log is not a defence once an employee actually offends.
+
+**Solution.** A layer sitting on top of an employer's existing training, replacing the post-training multiple-choice test with a conversational assessment. It outputs an executive report plus an audit-ready evidence appendix.
+
+*Conversation design.* A four-stage flow built on Bloom's taxonomy: core question, explanation, application, protégé effect.
+
+*Authoring.* Questions are handwritten by the admin or uploaded from SCORM or Excel, AI-enriched with a human in the loop, then converted into a rubric with a human in the loop. Once approved, the assessment locks and is reusable across unlimited users and runs.
+
+*Scoring.* LLM-as-judge producing binary 1/0 scores against pre-built rubrics rather than holistic scales, so every criterion is measurable. Responses below a confidence threshold route to human review. Three-pass multi-evaluator consensus with a tiebreaker, QA review before delivery, and optional named human review.
+
+*Architecture.* One high-quality Opus call builds the rubrics once, then cheap GPT-4o-mini calls score each response 0/1 against them. Deployed via a Railway worker plus Supabase, using async job processing to work around Vercel timeouts.
+
+*Stack.* Python, LangChain, LangGraph, LLM APIs, Supabase/Postgres, TypeScript with Zod, OAuth.
+
+**My role.** Everything, solo: architecture, build, landing page, sample reports, positioning, outreach.
+
+**Numbers.** Roughly 90% evaluation cost reduction, with output quality improved rather than merely maintained. Approximately $1–2 to build a question, $0.01–0.02 to run it. Five repeat runs against the same tested answers produced consistent results. Sample executive report 24 pages; sample evidence appendix 39 pages.
+
+**Status.** Architecture complete. The landing page is live, with a sample executive report, sample evidence appendix and admin dashboard demo publicly reachable. The MVP is gated behind a contact request because each run carries a cost.
+
+Go-to-market is a target list of 80–100 FCA and FINRA-regulated firms, with discovery calls held with compliance leaders and several client meetings. No revenue, pilots or customers to date.
+
+The beachhead is anti-money-laundering under FCA and FINRA, with a potential move to UK workplace harassment tied to the Employment Rights Act 2025 duty change on 30 October 2026.
+
+**Debugging case: the empty-section pass.** The LLM judge, working from a detailed rubric, was passing responses that missed key details. I found this pre-production using test cases each deliberately wrong in exactly one area.
+
+The root cause was that one criterion's data never reached the database, so the judge read an empty section and skipped it rather than failing it. The fix was twofold: correct the database write, and change the rubric to flag empty sections instead of skipping them.
+
+---
+
+## Validity
+
+End-to-end agentic claim-verification system. Open source.
+
+https://github.com/Jacing142/Validity
+
+Decomposes input into atomic claims, searches for supporting and contradicting evidence, classifies source credibility, and produces a structured verdict.
+
+LangGraph orchestration, WebSocket streaming, human-in-the-loop review modal, MCP server integration. FastAPI backend, React frontend, deployed via Docker.
+
+---
+
+## GenAI Conversation Explorer
+
+Browser-based tool for searching, filtering and merging exported AI conversation logs. Open source.
+
+- Live: https://gen-ai-conversation-searcher-merger.vercel.app
+- Source: https://github.com/Jacing142/GenAI-Conversation-Searcher-Merger
+
+Parses, cleans and merges exported data from ChatGPT and Claude, solving broken native search, automated titles and fragmented multi-account exports. Handles file sizes too large for direct re-upload, so users can filter and send curated datasets back into a model for analysis. It removes roughly 70% of irrelevant content.
+
+Pre-LLM PII filtering and local execution mean data never leaves the machine. Built in JavaScript, deployed on Vercel.
+
+100+ signups in the first week, with sustained 100+ weekly active users.
+
+---
+
+## Voice AI virtual agent — POC solution design
+
+An 11-intent NLU voice agent for a fictional restaurant chain contact centre, built in Vonage AI Studio as a Solutions Engineering take-home and delivered in 48 hours.
+
+Includes a three-tier containment framework, a $3.4M year-one ROI model, NLU training data and a full executive deck. Designed for a 150-agent call centre.
+
+The repository is open source and the presentation is my own work; both are publishable.
 
 ---
 
