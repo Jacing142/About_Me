@@ -39,7 +39,7 @@ AI Solutions Engineer. I find the business problems where AI is worth using, the
 
 ## Independent practice (2025–present)
 
-Employers are named below. Independent clients are described by industry and scale rather than by name, unless the engagement is already public.
+Employers are named below. Independent clients are described by industry.
 
 ### Order intake pipeline — logistics, Hong Kong
 
