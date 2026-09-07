@@ -14,26 +14,24 @@ AI Solutions Engineer. I find the business problems where AI is worth using, the
 |---|---|---|---|
 | 2025–present | Independent | AI Solutions Engineer | London / Remote |
 | 2025–present | iPrep | AI Transformation Specialist (part-time) | Remote |
-| 2024 | Independent | Partnership Development Consultant | — |
+| 2024 | Independent | Partnership Development Consultant | Business Travel |
 | 2024–2025 | iPrep | Customer Education Manager | Remote |
 | 2023–2024 | iPrep | Instructional Designer, Cognitive Assessment Specialist | Remote |
 | 2023 | Oriient | Technical Onboarding Supervisor | Tel Aviv |
 | 2022–2023 | Mean It | Cofounder | Remote |
-| 2022–2023 | AEI | Research Intern, geopolitics | — |
+| 2022–2023 | AEI | Research Intern, geopolitics | Herzliya |
 | 2021–2022 | Advanced Reality Lab, Reichman University | Research Assistant | Herzliya |
 | 2019–2021 | Sachlav | Customer Success / Account Manager | Jerusalem |
 
 ## Education and credentials
 
-- Reichman University (IDC) — B.A. Psychology, statistics focus (89%); Minor in Entrepreneurship (98%)
-- IDF — Artillery technician
+- Reichman University (IDC) — B.A. Psychology, statistics focus; Minor in Entrepreneurship
 - Python: 100 Days of Code (2025)
 - Product Analytics, Mixpanel / Product School
 - SQL: Data Reporting and Analysis
-- International debater (European Universities Debating Championship); debate instructor, 12 students
+- International debater (European Championship); debate instructor, 12 students
 - TAMID Consulting — built a zero-cost long-term marketing strategy for SodaStream, earning a personal referral from the CEO
 
-**Languages.** English (native), Hebrew (conversational).
 
 ---
 
