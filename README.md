@@ -93,7 +93,7 @@ A 150–200 person company transitioning to AI-first, handling tens of thousands
 
 **Problem.** Internal and customer-facing agents were running at scale with no guardrails, no analytics, and in some cases no system prompt at all. Prompts ran to 300–400 lines. Customer data was reaching the model unmasked. There was no ML expertise in-house.
 
-Agents in scope included an internal analyst agent that staff queried about customer segments and product ideas, and a customer-facing AI tarot reader.
+Agents in scope included an internal analyst agent that staff queried about customer segments and product ideas, and customer-facing agents.
 
 **Solution.** A written document of recommended improvements, plus hands-on fixes made alongside their team.
 
@@ -279,7 +279,6 @@ Tourism company, Jerusalem. The role was sales.
 
 - Approximately 600 B2C sales and 20 B2B university partnerships managed
 - 95% renewal rate, 75% referral rate
-- $300K+ in customer deployments per season; top performer on a 12-person team
 - Implementation time reduced from 5 weeks to 2 weeks after the training rollout, raising the team referral rate by 40%
 
 ---
@@ -308,7 +307,7 @@ Tourism company, Jerusalem. The role was sales.
 
 B2B SaaS for compliance comprehension assessment. Solo build, current.
 
-https://bastidian.vercel.app
+Open demo: https://bastidian-nu.vercel.app/demo
 
 **Problem.** Completion logs and multiple-choice pass rates prove that someone clicked, not that they understood. Regulators increasingly require evidence of comprehension, and a completion log is not a defence once an employee actually offends.
 
@@ -328,11 +327,11 @@ https://bastidian.vercel.app
 
 **Numbers.** Roughly 90% evaluation cost reduction, with output quality improved rather than merely maintained. Approximately $1–2 to build a question, $0.01–0.02 to run it. Five repeat runs against the same tested answers produced consistent results. Sample executive report 24 pages; sample evidence appendix 39 pages.
 
-**Status.** Architecture complete. The landing page is live, with a sample executive report, sample evidence appendix and admin dashboard demo publicly reachable. The MVP is gated behind a contact request because each run carries a cost.
+**Status.** Architecture complete. A working demo is open to anyone, with no contact request needed: a live conversational assessment, the admin dashboard, sample reports and pricing.
 
-Go-to-market is a target list of 80–100 FCA and FINRA-regulated firms, with discovery calls held with compliance leaders and several client meetings. No revenue, pilots or customers to date.
+No revenue, pilots or customers to date.
 
-The beachhead is anti-money-laundering under FCA and FINRA, with a potential move to UK workplace harassment tied to the Employment Rights Act 2025 duty change on 30 October 2026.
+The first focus is UK employers preparing for the Employment Rights Act 2025 duty change on 30 October 2026.
 
 **Debugging case: the empty-section pass.** The LLM judge, working from a detailed rubric, was passing responses that missed key details. I found this pre-production using test cases each deliberately wrong in exactly one area.
 
@@ -359,21 +358,21 @@ Browser-based tool for searching, filtering and merging exported AI conversation
 - Live: https://gen-ai-conversation-searcher-merger.vercel.app
 - Source: https://github.com/Jacing142/GenAI-Conversation-Searcher-Merger
 
-Parses, cleans and merges exported data from ChatGPT and Claude, solving broken native search, automated titles and fragmented multi-account exports. Handles file sizes too large for direct re-upload, so users can filter and send curated datasets back into a model for analysis. It removes roughly 70% of irrelevant content.
+Parses, cleans and merges exported data from ChatGPT and Claude, solving broken native search, automated titles and fragmented multi-account exports. Handles file sizes too large for direct re-upload, so users can filter and send curated datasets back into a model for analysis.
 
-Pre-LLM PII filtering and local execution mean data never leaves the machine. Built in JavaScript, deployed on Vercel.
+Exports are processed locally in the browser. Built in JavaScript, deployed on Vercel.
 
-100+ signups in the first week, with sustained 100+ weekly active users.
+Sustained 100+ weekly active users (Mixpanel).
 
 ---
 
 ## Voice AI virtual agent — POC solution design
 
-An 11-intent NLU voice agent for a fictional restaurant chain contact centre, built in Vonage AI Studio as a Solutions Engineering take-home and delivered in 48 hours.
+An 11-intent NLU voice agent for a fictional restaurant chain contact centre, built in Vonage AI Studio.
 
 Includes a three-tier containment framework, a $3.4M year-one ROI model, NLU training data and a full executive deck. Designed for a 150-agent call centre.
 
-The repository is open source and the presentation is my own work; both are publishable.
+A 48-hour Solutions Engineering take-home for Vonage. Za Pizza is a fictional brand. Reached the final round.
 
 ---
 
@@ -397,7 +396,6 @@ The repository is open source and the presentation is my own work; both are publ
 | Early traction | Hundreds of beta testers; finals at two pitch nights (Apple, Microsoft); VC meetings | Mean It |
 | Sales volume | ~600 B2C sales, 20 B2B university partnerships | Sachlav, recurring twice yearly across two terms |
 | Renewal and referral | 95% renewal, 75% referral, team referral +40% | Sachlav |
-| Deployment value | $300K+ per season; top performer on a 12-person team | Sachlav |
 | Implementation time | 5 weeks → 2 weeks | Sachlav, after training programme rollout |
 | Partnership development | 1,200+ outreaches, 300+ meetings, 40+ partnerships, $3M+ pipeline | Four-month engagement |
 | Feedback engine output | 18,600 reports, 85% less production time per entry, zero escalations, $15 total API cost | Three Hogan instruments, education client |
@@ -407,8 +405,8 @@ The repository is open source and the presentation is my own work; both are publ
 | Agent language drift | ~20% → under 1% | D2C ecommerce client, 8+ languages |
 | AI workshops | ~10 delivered, 100+ trained, ~90% adoption | Adoption is manager attestation, not measured |
 | Evaluation cost | ~90% reduction; ~$1–2 per question built, ~$0.01–0.02 per run | Bastidian, quality improved |
-| Bastidian pipeline | 80–100 firm target list, discovery calls held | No revenue, pilots or customers to date |
-| Conversation Explorer usage | 100+ weekly active users; 100+ signups in week one | |
+| Bastidian status | Working demo, open to the public | No revenue, pilots or customers to date |
+| Conversation Explorer usage | 100+ weekly active users | Mixpanel |
 | Voice agent POC | 11 intents, three-tier containment, $3.4M ROI model | Take-home assignment, 48 hours |
 
 ---
