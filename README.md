@@ -1,6 +1,6 @@
 # Jai Goldberg
 
-AI Solutions Engineer | AI Transformation. 
+AI Solutions Engineer | AI Transformation.
 I find the business problems where AI is worth using, then design, build and ship the systems that solve them, end to end.
 
 - Portfolio: https://jais-portfolio-site.vercel.app/
