@@ -1,6 +1,6 @@
 # Jai Goldberg
 
-AI Solutions Engineer. I find the business problems where AI is worth using, then design, build and ship the systems that solve them, end to end.
+AI Solutions Engineer | AI Transformation. I find the business problems where AI is worth using, then design, build and ship the systems that solve them, end to end.
 
 - Portfolio: https://jais-portfolio-site.vercel.app/
 - LinkedIn: https://www.linkedin.com/in/jai-goldberg142
@@ -20,7 +20,7 @@ AI Solutions Engineer. I find the business problems where AI is worth using, the
 | 2023 | Oriient | Technical Onboarding Supervisor | Tel Aviv |
 | 2022–2023 | Mean It | Cofounder | Remote |
 | 2022–2023 | AEI | Research Intern, geopolitics | Herzliya |
-| 2021–2022 | Advanced Reality Lab, Reichman University | Research Assistant | Herzliya |
+| 2021–2022 | Advanced Reality Lab, Reichman University | Research Assistant, VR | Herzliya |
 | 2019–2021 | Sachlav | Customer Success / Account Manager | Jerusalem |
 
 ## Education and credentials
@@ -253,17 +253,17 @@ Two-sided consumer analytics platform.
 
 **Solution.** Individuals receive personalised insights they can act on; companies receive aggregated consumer and segmentation data. I ran consumer discovery to validate the pain and find fit, determined which data points mattered most, and built onboarding to capture them.
 
-**My role.** Directed a team of six: two technical, one business, one psychology and behaviour, one design, plus myself. Peer and cofounder leadership rather than line management.
+**My role.** Directed a team of six: two technical, one business, one psychology and behaviour, one design, plus myself.
 
 - Set goals, ran meetings, owned structure, divided ownership, presented, and entered the team into demo days and pitch nights
-- Built pitch decks, landing page and demo
+- Co-built pitch decks, landing page and demo
 - Owned and prioritised the backlog against activation data
 - Built sales enablement assets: objection-handling cards, discovery question sets, value-proposition guides
 - Ran research on zero marketing budget through direct interviews, peer networks and early-access signups
 
 **Outcome.** Activation improved from 20% to 80%. Hundreds of beta testers voluntarily submitting personal data. Finals at two pitch nights, hosted at Apple and Microsoft. Met with VCs.
 
-**Why it wound down.** Despite genuine consumer demand, the company wound down on technical scaling. Data collection was manual and individual, with no API available; tech companies were legally obliged under GDPR to hand over user data on request, and preferred to take the fine. Activation also required a personal conversation per user, so growth was bounded by my own time. Neither constraint was visible until we tried to grow.
+**Why it wound down.** Despite genuine consumer demand, the company wound down on technical scaling.
 
 ---
 
@@ -329,9 +329,7 @@ Open demo: https://bastidian-nu.vercel.app/demo
 
 **Status.** Architecture complete. A working demo is open to anyone, with no contact request needed: a live conversational assessment, the admin dashboard, sample reports and pricing.
 
-No revenue, pilots or customers to date.
-
-The first focus is UK employers preparing for the Employment Rights Act 2025 duty change on 30 October 2026.
+The focus is UK employers preparing for the Employment Rights Act 2025 duty change on 30 October 2026.
 
 **Debugging case: the empty-section pass.** The LLM judge, working from a detailed rubric, was passing responses that missed key details. I found this pre-production using test cases each deliberately wrong in exactly one area.
 
