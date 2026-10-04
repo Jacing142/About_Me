@@ -132,11 +132,11 @@ I delivered an 18-slide deck for a mixed technical and non-technical decision-ma
 - Responses parsed by regex per profession block, with missing blocks written as a parsing error rather than shifting rows
 - Checkpoint and resume via PropertiesService against a five-minute budget, under Apps Script's six-minute ceiling
 - Per-pair try/catch so one failure does not abort the run, with a custom Sheets menu for start, resume, reset and checkpoint check
-- A separate rubric-based QA pass runs after generation
+- 5% of generated reports were manually QAed after generation. Zero edits were needed
 
-**My role.** Designed and built the entire pipeline solo, including scoring logic, validation layers and the rubric review pass.
+**My role.** Designed and built the entire pipeline solo, including scoring logic, validation layers and the QA sampling.
 
-**Outcome.** 18,600 reports generated across three Hogan instruments, with 85% less production time per entry, zero escalations to human review, no edits found in QA sampling, and $15 total API cost.
+**Outcome.** 18,600 reports generated across three Hogan instruments, with 85% less production time per entry and $15 total API cost. 5% of generated reports were manually QAed. Zero edits were needed.
 
 ### AI opportunity assessment — international school, New Delhi
 
@@ -330,8 +330,6 @@ Open demo: https://bastidian-nu.vercel.app/demo
 
 **Status.** Architecture complete. A working demo is open to anyone, with no contact request needed: a live conversational assessment, the admin dashboard, sample reports and pricing.
 
-The focus is UK employers preparing for the Employment Rights Act 2025 duty change on 30 October 2026.
-
 **Debugging case: the empty-section pass.** The LLM judge, working from a detailed rubric, was passing responses that missed key details. I found this pre-production using test cases each deliberately wrong in exactly one area.
 
 The root cause was that one criterion's data never reached the database, so the judge read an empty section and skipped it rather than failing it. The fix was twofold: correct the database write, and change the rubric to flag empty sections instead of skipping them.
@@ -367,7 +365,7 @@ Sustained 100+ weekly active users (Mixpanel).
 
 ## Voice AI virtual agent — POC solution design
 
-An 11-intent NLU voice agent for a fictional restaurant chain contact centre, built in Vonage AI Studio.
+An 11-intent NLU voice agent for a fictional restaurant chain contact centre, designed for Vonage AI Studio.
 
 Includes a three-tier containment framework, a $3.4M year-one ROI model, NLU training data and a full executive deck. Designed for a 150-agent call centre.
 
@@ -397,7 +395,7 @@ A 48-hour Solutions Engineering take-home for Vonage. Za Pizza is a fictional br
 | Renewal and referral | 95% renewal, 75% referral, team referral +40% | Sachlav |
 | Implementation time | 5 weeks → 2 weeks | Sachlav, after training programme rollout |
 | Partnership development | 1,200+ outreaches, 300+ meetings, 40+ partnerships, $3M+ pipeline | Four-month engagement |
-| Feedback engine output | 18,600 reports, 85% less production time per entry, zero escalations, $15 total API cost | Three Hogan instruments, education client |
+| Feedback engine output | 18,600 reports, 85% less production time per entry, $15 total API cost; 5% manually QAed, zero edits | Three Hogan instruments, education client |
 | Applicant processing cycle | 5+ weeks → 3 weeks per applicant | Tourism client, personalised nudging |
 | Operations time saved | 25+ min per employee per day across a 20-person team, up to 3h in peak | Hospitality client, three automations |
 | Order intake accuracy | 99%+ of what the system passes | Logistics client, high confidence threshold |
@@ -412,7 +410,7 @@ A 48-hour Solutions Engineering take-home for Vonage. Za Pizza is a fictional br
 
 # Technical capabilities
 
-**Languages.** Python · JavaScript · TypeScript · SQL · HTML/CSS
+**Languages.** Python · JavaScript ·  SQL · HTML/CSS
 
 **LLM and AI frameworks.** LLM APIs (Claude, GPT, Gemini) · LangChain · LangGraph · FastAPI · Ragas · search APIs (Serper, You.com) · ElevenLabs · Synthesia/HeyGen · NotebookLM
 
@@ -420,7 +418,7 @@ A 48-hour Solutions Engineering take-home for Vonage. Za Pizza is a fictional br
 
 **Data and storage.** Postgres/Supabase · vector and relational databases · Airtable · BigQuery
 
-**Deployment and infrastructure.** Vercel · GitHub · Claude Code and Claude Design · AWS · Azure
+**Deployment and infrastructure.** Vercel · GitHub · Claude Code · AWS · Azure
 
 **Analytics.** Mixpanel · GA4 · xAPI
 
